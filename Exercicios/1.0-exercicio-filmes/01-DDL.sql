@@ -1,0 +1,18 @@
+--DDL
+
+CREATE DATABASE Filmes;
+USE Filmes;
+
+CREATE TABLE Generos
+(
+	idGenero	INT PRIMARY KEY IDENTITY,
+	Genero		VARCHAR(200) NOT NULL,
+);
+
+CREATE TABLE Filmes
+(
+	idFilme		INT PRIMARY KEY IDENTITY,
+	idGenero	INT FOREIGN KEY REFERENCES Generos(idGenero),
+	Filme		VARCHAR(200) NOT NULL
+
+);
