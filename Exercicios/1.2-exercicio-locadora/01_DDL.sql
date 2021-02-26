@@ -18,13 +18,13 @@ CREATE TABLE Modelos
 (
 	idModelo		INT PRIMARY KEY IDENTITY,
 	idMarca			INT FOREIGN KEY REFERENCES Empresas(idEmpresa),
-	Marca			VARCHAR(200) NOT NULL,
+	Modelo			VARCHAR(200) NOT NULL,
 );
 CREATE TABLE Veiculos
 (
 	Placa			VARCHAR(10) PRIMARY KEY,
 	idModelo		INT FOREIGN KEY REFERENCES Modelos(idModelo),
-	EmpresaId		INT FOREIGN KEY REFERENCES Empresas(idEmpresa),
+	idEmpresa		INT FOREIGN KEY REFERENCES Empresas(idEmpresa),
 );
 CREATE TABLE Clientes
 (
@@ -32,7 +32,7 @@ CREATE TABLE Clientes
 	Nome			VARCHAR(200),
 	CPF				INT,
 );
-CREATE TABLE Aluguel
+CREATE TABLE Alugueis
 (
 	idAluguel		INT PRIMARY KEy IDENTITY,
 	Placa			VARCHAR(10) FOREIGN KEY REFERENCES Veiculos(Placa),
