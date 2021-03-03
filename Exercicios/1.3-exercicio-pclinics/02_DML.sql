@@ -1,10 +1,10 @@
 --DML
 
-INSERT INTO Clinicas (Endereco)
-VALUES ('Rua A'), ('Rua B');
+INSERT INTO Clinicas (Endereco, RazaoSocial)
+VALUES ('Rua A', 'Salve animais'), ('Rua B', 'pet');
 
 INSERT INTO Veterinarios (idClinica, Nome)
-VALUES (1, 'Alberto'), (1, 'Bernardo'), (1, 'Carlos');
+VALUES (1, 'Alberto', '1234-SP'), (1, 'Bernardo', '1233-SP'), (1, 'Carlos', '0000-SP');
 
 INSERT INTO Tipos (Tipo)
 VALUES ('Gato'), ('Cachorro');

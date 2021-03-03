@@ -8,12 +8,14 @@ CREATE TABLE Clinicas
 (
 	idClinica		INT PRIMARY KEY IDENTITY,
 	Endereco		VARCHAR(200),
+	RazaoSocial		VARCHAR(200)
 );
 CREATE TABLE Veterinarios
 (
 	idVeterinario	INT PRIMARY KEY IDENTITY,
 	idClinica		INT FOREIGN KEY REFERENCES Clinicas(idClinica),
 	Nome			VARCHAR(200),
+	CRMV			VARCHAR(10)
 );
 CREATE TABLE Tipos
 (

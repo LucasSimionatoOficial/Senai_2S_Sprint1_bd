@@ -4,7 +4,7 @@ INSERT INTO Estilos (Estilo)
 VALUES ('Indie'), ('Folk'), ('Pagode');
 
 INSERT INTO Usuarios (Nome, Email, Senha, Permissao)
-VALUES ('Frederico', 'Fred@gmail.com', '12345678', 'comum'), ('Administrador', 'Adm@optus.com', '12345678', 'administrador');
+VALUES ('Frederico', 'Fred@gmail.com', '123', 'comum'), ('Administrador', 'Adm@optus.com', '123', 'administrador');
 
 INSERT INTO Artistas (Nome)
 VALUES ('Alberto'), ('Bernardo');
